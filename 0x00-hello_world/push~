@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Enter the directory path where you want to put the file:"
+read directory
+
+echo "Enter the filename:"
+read filename
+
+echo "Enter the content for $filename (Press Ctrl+D when finished):"
+cat > "$directory/$filename"
+
+chmod +x "$directory/$filename"
+echo "File $filename created in $directory with the following content and set as executable:"
+ls -l "$directory/$filename"
+
+echo "Enter the commit message:"
+read commit_message
+
+git add "$directory/$filename"
+git commit -m "$commit_message"
+git push
