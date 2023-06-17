@@ -3,26 +3,30 @@
 #include <stdio.h>
 
 /**
- *main - enrty point
+ * main - entry point
  *
- *return = 0 (success)
+ * Return: 0 (success)
  */
 
 int main(void)
 {
 int n;
+
 srand(time(0));
 n = rand() - RAND_MAX / 2;
+
 if (n > 5)
 {
-printf(n, "%i and is greater than 5\n");
+printf("%i is greater than 5\n", n);
 }
 else if (n == 5)
 {
-printf(n, "%i and is 0\n");
+printf("%i is equal to 5\n", n);
 }
 else if (n < 5)
 {
-printf(n, "%i and is less than 6 and not 0\n")
+printf("%i is less than 5 and not equal to 0\n", n);
+}
+
 return (0);
 }
