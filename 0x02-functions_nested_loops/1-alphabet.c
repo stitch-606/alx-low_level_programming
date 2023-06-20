@@ -12,5 +12,4 @@ for (lett = 'a'; lett <= 'z'; lett++)
 _putchar(lett);
 }
 _putchar('\n');
-return (0);
 }
