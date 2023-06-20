@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_sign - Prints the sign of a number
  * @n: The number to check
@@ -16,7 +17,7 @@ _putchar(n + '0');
 _putchar('\n');
 return (1);
 }
-if else (n == 0)
+else if (n == 0)
 {
 _putchar('0');
 _putchar(',');
