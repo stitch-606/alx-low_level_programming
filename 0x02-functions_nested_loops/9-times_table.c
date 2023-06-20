@@ -20,6 +20,7 @@ _putchar('0');
 else if (product <= 9)
 {
 _putchar(product + '0');
+_putchar(' ')
 }
 else
 {
